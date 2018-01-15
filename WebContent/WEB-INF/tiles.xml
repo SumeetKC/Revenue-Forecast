@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="base.definition" template="/WEB-INF/jsp/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+	</definition>
+	<definition name="base1.definition" template="/WEB-INF/jsp/layout1.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="body" value="" />
+	</definition>
+	<definition name="login" extends="base.definition">
+		<put-attribute name="title" value="Revenue Forecast" />
+		<put-attribute name="body" value="/WEB-INF/jsp/welcome.jsp" />
+	</definition>
+	<definition name="welcome" extends="base.definition">
+		<put-attribute name="title" value="Revenue Forecast" />
+		<put-attribute name="body" value="/WEB-INF/jsp/welcome.jsp" />
+	</definition>
+	<definition name="activeassignmentuploadformview" extends="base.definition">
+		<put-attribute name="title"
+			value="Revenue Forecast- Upload Active Assignment Sheet" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/activeassignmentuploadform.jsp" />
+	</definition>
+	<definition name="esavscontractoriduploadformview" extends="base.definition">
+		<put-attribute name="title"
+			value="Revenue Forecast- Upload ESA vs Contractor Sheet" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/esavscontractoriduploadform.jsp" />
+
+	</definition>
+	<definition name="projectlistuploadformview" extends="base.definition">
+		<put-attribute name="title"
+			value="Revenue Forecast- Upload Project List Sheet" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/projectlistuploadform.jsp" />
+	</definition>
+	<definition name="sowwiseworkerdatauploadformview" extends="base.definition">
+		<put-attribute name="title"
+			value="Revenue Forecast- Upload Sow wise worker Data Sheet" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/sowwiseworkerdatauploadform.jsp" />
+	</definition>
+	<definition name="newEmployeeView" extends="login">
+		<put-attribute name="title" value="New Employees" />
+		<put-attribute name="body" value="/WEB-INF/jsp/newEmployeeView.jsp" />
+	</definition>
+	<definition name="vacationdetailuploadformview" extends="base.definition">
+		<put-attribute name="title"
+			value="Revenue Forecast- Upload Vacation Details Sheet" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/vacationdetailuploadform.jsp" />
+	</definition>
+	<definition name="justworkernewuploadformview" extends="base.definition">
+		<put-attribute name="title"
+			value="Revenue Forecast- Upload Just worker Sheet" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/justworkernewuploadform.jsp" />
+	</definition>
+	<definition name="holidaylistuploadformview" extends="base.definition">
+		<put-attribute name="title"
+			value="Revenue Forecast- Upload Holiday List Sheet" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/holidaylistuploadform.jsp" />
+	</definition>
+	<definition name="ppmrecorduploadformview" extends="base.definition">
+		<put-attribute name="title"
+			value="Revenue Forecast- Upload Holiday List Sheet" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/ppmrecorduploadform.jsp" />
+	</definition>
+	<definition name="registerview" extends="login">
+		<put-attribute name="title" value="Register User" />
+		<put-attribute name="body" value="/WEB-INF/jsp/register.jsp" />
+	</definition>
+	<definition name="loginview" extends="login">
+		<put-attribute name="title" value="Login User" />
+		<put-attribute name="body" value="/WEB-INF/jsp/login.jsp" />
+	</definition>
+	<definition name="errorview" extends="base.definition">
+		<put-attribute name="title" value="Error" />
+		<put-attribute name="body" value="/WEB-INF/jsp/error.jsp" />
+	</definition>
+	<definition name="generatebase" extends="login">
+		<put-attribute name="title" value="Generate Base" />
+		<put-attribute name="body" value="/WEB-INF/jsp/generatebase.jsp" />
+	</definition>
+	<definition name="viewreportbypmview" extends="base.definition">
+		<put-attribute name="title" value="Report PM wise" />
+		<put-attribute name="body" value="/WEB-INF/jsp/viewreportbypm.jsp" />
+	</definition>
+	<definition name="viewreportbyprojectview" extends="base.definition">
+		<put-attribute name="title" value="Report Project Wise" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/viewreportbyproject.jsp" />
+	</definition>
+	<definition name="viewbasereporttabularview" extends="base.definition">
+		<put-attribute name="title" value="Base Report" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/viewbasereporttabular.jsp" />
+	</definition>
+
+	<definition name="generateActiveSheetView" extends="base.definition">
+		<put-attribute name="title" value="Revenue Forecast" />
+		<put-attribute name="body" value="/WEB-INF/jsp/activeSheet.jsp" />
+	</definition>
+	<definition name="duplicateReportView" extends="base.definition">
+		<put-attribute name="title" value="Revenue Forecast" />
+		<put-attribute name="body" value="/WEB-INF/jsp/duplicatereport.jsp" />
+	</definition>
+	<definition name="saveduplicate" extends="base.definition">
+		<put-attribute name="title" value="Revenue Forecast" />
+		<put-attribute name="body" value="/WEB-INF/jsp/welcome.jsp" />
+	</definition>
+	<definition name="selectPPMMonthforTask" extends="base.definition">
+		<put-attribute name="title" value="Revenue Forecast" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/selectMonthPPMTask.jsp" />
+	</definition>
+	<!-- <definition name="selectedmonthforppmtask" extends="base.definition"> 
+		<put-attribute name="title" value="Revenue Forecast" /> <put-attribute name="body" 
+		value="/WEB-INF/jsp/ppmTaskwiseReport.jsp" /> </definition> -->
+	<definition name="ppmtaskreport" extends="base.definition">
+		<put-attribute name="title" value="Revenue Forecast" />
+		<put-attribute name="body" value="/WEB-INF/jsp/ppmTaskwiseReport.jsp" />
+	</definition>
+	<definition name="selectPPMMonthforStatus" extends="base.definition">
+		<put-attribute name="title" value="Revenue Forecast" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/selectMonthPPMStatus.jsp" />
+	</definition>
+	<!-- <definition name="selectedmonthforppmstatus" extends="base.definition"> 
+		<put-attribute name="title" value="Revenue Forecast" /> <put-attribute name="body" 
+		value="/WEB-INF/jsp/ppmStatuswiseReport.jsp" /> </definition> -->
+
+	<definition name="basedatageneratedview" extends="base.definition">
+		<put-attribute name="title" value="Revenue Forecast" />
+		<put-attribute name="body" value="/WEB-INF/jsp/basedatasuccess.jsp" />
+	</definition>
+	<!-- <definition name="viewbasereporttabularview" extends="base.definition"> 
+		<put-attribute name="title" value="Revenue Forecast" /> <put-attribute name="body" 
+		value="/WEB-INF/jsp/viewreportbyproject.jsp" /> </definition> -->
+	<definition name="ppmstatusreportview" extends="base.definition">
+		<put-attribute name="title" value="Revenue Forecast" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/ppmStatuswiseReport.jsp" />
+	</definition>
+	<definition name="allocationreportuploadformview" extends="base.definition">
+		<put-attribute name="title" value="Revenue Forecast" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/activereportuploadform.jsp" />
+	</definition>
+	<definition name="viewupdateproject" extends="base.definition">
+		<put-attribute name="title"
+			value="Revenue Forecast - View/Update Projects" />
+		<put-attribute name="body" value="/WEB-INF/jsp/viewUpdateProject.jsp" />
+	</definition>
+	<definition name="updateproject" extends="base1.definition">
+		<put-attribute name="title"
+			value="Revenue Forecast - View/Update Projects" />
+		<put-attribute name="body" value="/WEB-INF/jsp/updateProject.jsp" />
+	</definition>
+	<definition name="addnewproject" extends="base1.definition">
+		<put-attribute name="title" value="Revenue Forecast - Add Project" />
+		<put-attribute name="body" value="/WEB-INF/jsp/addnewproject.jsp" />
+	</definition>
+
+	<definition name="ppmactuals" extends="base.definition">
+		<put-attribute name="title" value="Revenue Forecast - PPM Actuals" />
+		<put-attribute name="body" value="/WEB-INF/jsp/ppmActuals.jsp" />
+	</definition>
+
+	<definition name="error" extends="base.definition">
+		<put-attribute name="title" value="ERROR" />
+		<put-attribute name="body" value="/WEB-INF/jsp/error.jsp" />
+	</definition>
+	<definition name="registerformview" extends="base.definition">
+		<put-attribute name="title" value="Register Here" />
+		<put-attribute name="body" value="/WEB-INF/jsp/registerform.jsp" />
+	</definition>
+	<definition name="userlistview" extends="base.definition">
+		<put-attribute name="title" value="User List" />
+		<put-attribute name="body" value="/WEB-INF/jsp/userlist.jsp" />
+	</definition>
+	<definition name="showdifferenceinupload" extends="base.definition">
+		<put-attribute name="title" value="Different SOW Details Employees" />
+		<put-attribute name="body" value="/WEB-INF/jsp/sowdifferencelist.jsp" />
+	</definition>
+	<definition name="forgotpassview" extends="base.definition">
+		<put-attribute name="title" value="Forgot Password" />
+		<put-attribute name="body" value="/WEB-INF/jsp/forgotPassView.jsp" />
+	</definition>
+	<definition name="forgotpasschange" extends="base.definition">
+		<put-attribute name="title" value="Forgot Password Update" />
+		<put-attribute name="body" value="/WEB-INF/jsp/forgotPassChange.jsp" />
+	</definition>
+	<definition name="changepassview" extends="base.definition">
+		<put-attribute name="title" value="Change Password" />
+		<put-attribute name="body" value="/WEB-INF/jsp/changePassword.jsp" />
+	</definition>
+	
+	<definition name="allocationsuccessview" extends="base.definition">
+		<put-attribute name="title" value="Allocation Report" />
+		<put-attribute name="body" value="/WEB-INF/jsp/allocationsuccess.jsp" />
+	</definition>
+	<definition name="esavscontractorsuccessview" extends="base.definition">
+		<put-attribute name="title" value="Esa Vs Contractor Report" />
+		<put-attribute name="body" value="/WEB-INF/jsp/esavscontractorsuccess.jsp" />
+	</definition>
+	<definition name="projectlistsuccessview" extends="base.definition">
+		<put-attribute name="title" value="Project List" />
+		<put-attribute name="body" value="/WEB-INF/jsp/projectlistsuccess.jsp" />
+	</definition>
+	<definition name="sowworkersuccessview" extends="base.definition">
+		<put-attribute name="title" value="Sow Worker Report" />
+		<put-attribute name="body" value="/WEB-INF/jsp/sowworkersuccess.jsp" />
+	</definition>
+	<definition name="vacationsuccessview" extends="base.definition">
+		<put-attribute name="title" value="Vacation Details Report" />
+		<put-attribute name="body" value="/WEB-INF/jsp/vacationsuccess.jsp" />
+	</definition>
+	<definition name="justworkersuccessview" extends="base.definition">
+		<put-attribute name="title" value="Just Worker New Report" />
+		<put-attribute name="body" value="/WEB-INF/jsp/justworkersuccess.jsp" />
+	</definition>
+	<definition name="ppmsuccessview" extends="base.definition">
+		<put-attribute name="title" value="PPM Report" />
+		<put-attribute name="body" value="/WEB-INF/jsp/ppmsuccess.jsp" />
+	</definition>
+
+</tiles-definitions>
