@@ -1,0 +1,39 @@
+<%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- <a href="login.html" >login</a> -->
+
+<div align="center">
+<form method="post" action="storefiles.html" enctype="multipart/form-data">
+
+<label>Esa Vs Contractor Id</label><input type="file" name="Esa_Vs_Contractor_Id_file" id="Esa_Vs_Contractor_Id_file"/>
+<hr>
+<label>Active Assignments</label><input type="file" name="Active_Assignments_file" id="Active_Assignments_file"/>
+<hr>
+<label>Vacation Details</label><input type="file" name="Vacation_Details_file" id="Vacation_Details_file"/>
+<hr>
+<label>Project List</label><input type="file" name="Project_List_file" id="Project_List_file"/>
+<hr>
+<label>Just Worker</label><input type="file" name="Just_Worker_New_file" id="Just_Worker_New_file"/>
+<hr>
+<label>Sow Wise Worker Date</label><input type="file" name="Sow_Wise_Worker_Date_file" id="Sow_Wise_Worker_Date_file"/>
+<hr>
+<input type="submit" value="Save All"/>
+</form>
+</div>
+<a href="generatebasefile.html">Generate Base</a></br>
+ <a href="generateActiveSheet.html" >Generate Active sheet</a></br> 
+<a href="readTimesheetAudit.html" >Read Time sheet Audit</a></br>
+<a href="duplicatereport.html" >Duplicate Report</a></br>
+</body>
+</html>
